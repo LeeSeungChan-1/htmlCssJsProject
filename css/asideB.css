@@ -1,0 +1,39 @@
+.aside-b{
+    grid-area: aside-b;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.notice-box {
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.notice-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: black; 
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.notice-item a{
+padding:10px;
+color:black;
+font-size: 14px;
+text-decoration: none;
+display: flex;
+border: 1px solid #ddd;
+text-align: left;
+}
+   
+.aside-b-img {
+    margin-top: 30px;  
+    height: 100px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+
+}
