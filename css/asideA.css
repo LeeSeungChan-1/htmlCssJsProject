@@ -42,16 +42,10 @@
     border-radius: 10px;
 
 }
+
 @media(max-width: 1100px){
     .aside-a{
         display: none;
     }
-    .page{
-        grid-template-columns: auto 260px;
-        grid-template-rows: 72px auto 135px;
-        grid-template-areas: 
-        'header header'
-        'main aside-b'
-        'footer aside-b';
-    }
+
 }

@@ -35,3 +35,17 @@ text-align: left;
 
 }
 
+@media(max-width: 1400px){
+    .aside-b{
+        display: none;
+    }
+    .page{
+        grid-template-columns: 260px auto;
+        grid-template-rows: 72px auto 135px;
+        grid-template-areas:
+        'header header'
+        'aside-a main'
+        'aside-a footer';
+    }
+}
+
