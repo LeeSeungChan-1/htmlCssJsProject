@@ -80,8 +80,8 @@
     background-position: center;
     background-repeat: no-repeat;   
     background-size: cover;  
-    width: 150px;  
-    height: 150px;
+    width: 100px;
+    height: 75px;
     flex: 1 0 auto;
 }
 .item-text{
@@ -100,17 +100,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
     }
-    .news-img{
-        height: 50px;
-        width: 50px;
-    }
+
 }
 @media(min-width: 1400px){
     .main-review-item{
         width: 33.33333%;
     }
-    .news-img{
-        height: 100px;
-        width: 100px;
-    }
+
 }
