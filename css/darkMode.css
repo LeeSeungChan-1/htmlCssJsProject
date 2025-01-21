@@ -1,6 +1,6 @@
 .dark1{
     background-color: black;
-    color: white;
+    color: white !important;
 }
 
 .dark2 {

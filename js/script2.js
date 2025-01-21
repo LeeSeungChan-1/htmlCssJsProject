@@ -35,9 +35,19 @@ const darkMode = () => {
             asideA[i].classList.remove("dark2");
         }
 
+        let mainItemA = document.querySelectorAll(".main-item a");
+        for(let i = 0; i < mainItemA.length; i++) {
+            mainItemA[i].classList.remove("dark2");
+        }
+
         let mainItem = document.querySelectorAll(".main-item");
         for(let i = 0; i < mainItem.length; i++) {
             mainItem[i].classList.remove("dark2");
+        }
+
+        let mainContentItemA = document.querySelectorAll(".main-content-item a");
+        for(let i = 0; i < mainContentItemA.length; i++) {
+            mainContentItemA[i].classList.remove("dark2");
         }
 
         let mainContentItem = document.querySelectorAll(".main-content-item");
@@ -65,9 +75,19 @@ const darkMode = () => {
             asideA[i].classList.add("dark2");
         }
 
+        let mainItemA = document.querySelectorAll(".main-item a");
+        for(let i = 0; i < mainItemA.length; i++) {
+            mainItemA[i].classList.add("dark2");
+        }
+
         let mainItem = document.querySelectorAll(".main-item");
         for(let i = 0; i < mainItem.length; i++) {
             mainItem[i].classList.add("dark2");
+        }
+
+        let mainContentItemA = document.querySelectorAll(".main-content-item a");
+        for(let i = 0; i < mainContentItemA.length; i++) {
+            mainContentItemA[i].classList.add("dark2");
         }
 
         let mainContentItem = document.querySelectorAll(".main-content-item");
