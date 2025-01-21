@@ -26,7 +26,19 @@
 }
 .header img{
     height: 28px;
+
 }
+
+/*헤더 로고 회전*/
+.header-a img {
+    transition: transform 0.5s ease; 
+  }
+  
+ .header-a img:hover {
+    transform: rotate(360deg); 
+  }
+
+
 .header button{
     font-size: 15px;
     padding: 0.5em 1em;
