@@ -19,3 +19,7 @@
         flex-direction: column;
     }
 }
+a:hover{
+    background-color: dodgerblue;
+    color: white;
+}
