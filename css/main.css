@@ -40,6 +40,7 @@
     background-position: center;
     background-repeat: no-repeat;   
     background-size: cover;
+    border-radius: 10px;
 }
 .main-review-item-header{
     padding-bottom: 0.5em;
@@ -82,7 +83,7 @@
     background-size: cover;  
     width: 100px;
     height: 75px;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 .item-text{
     font-size: 15px;
