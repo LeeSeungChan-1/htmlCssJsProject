@@ -45,6 +45,11 @@ const darkMode = () => {
             mainContentItem[i].classList.remove("dark2");
         }
 
+        let asideB = document.querySelectorAll(".notice-title, .notice-item a");
+        for (let i = 0; i < asideB.length; i++) {
+            asideB[i].classList.remove("dark2");
+        }
+
         darkModeFlag = false;
     }else{
         document.querySelector(".header").classList.add("dark2");
@@ -68,6 +73,11 @@ const darkMode = () => {
         let mainContentItem = document.querySelectorAll(".main-content-item");
         for(let i = 0; i < mainContentItem.length; i++) {
             mainContentItem[i].classList.add("dark2");
+        }
+
+        let asideB = document.querySelectorAll(".notice-title, .notice-item a");
+        for (let i = 0; i < asideB.length; i++) {
+            asideB[i].classList.add("dark2");
         }
 
         darkModeFlag = true;
