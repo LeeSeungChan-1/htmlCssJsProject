@@ -134,3 +134,81 @@ const search = () => {
 }
 
 document.getElementById("search").onclick = search;
+
+
+
+
+
+let tictactoeBox = [];
+let tictactoeFlag = false;
+let sign;
+let winner;
+const tictactoe = () => {
+
+    let selectedCell = event.target;
+    let cellValue = selectedCell.getAttribute("id");
+    if(tictactoeFlag) {
+        sign = "X";
+        tictactoeBox[cellValue] = sign;
+        document.getElementById(cellValue).classList.add("cross-img");
+        tictactoeFlag = false;
+    }else{
+        sign = "O";
+        tictactoeBox[cellValue] = sign;
+        document.getElementById(cellValue).classList.add("circle-img");
+        tictactoeFlag = true;
+    }
+
+    if(tictactoeBox[0] === sign && tictactoeBox[1] === sign && tictactoeBox[2] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[3] === sign && tictactoeBox[4] === sign && tictactoeBox[5] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[6] === sign && tictactoeBox[7] === sign && tictactoeBox[8] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[0] === sign && tictactoeBox[3] === sign && tictactoeBox[6] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[1] === sign && tictactoeBox[4] === sign && tictactoeBox[7] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[2] === sign && tictactoeBox[5] === sign && tictactoeBox[8] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[0] === sign && tictactoeBox[4] === sign && tictactoeBox[8] === sign) {
+        winner = sign;
+    }else if(tictactoeBox[2] === sign && tictactoeBox[4] === sign && tictactoeBox[6] === sign) {
+        winner = sign;
+    }else{
+        winner = null;
+    }
+    console.log(tictactoeBox);
+    if(winner) {
+        alert("winner is " + winner);
+        document.getElementsByClassName("tictactoe-box")[0].style.zIndex = -1;
+    }
+    console.log(cellValue);
+}
+
+
+let tictactoeCell = document.querySelectorAll(".tictactoe-cell");
+for(let i = 0; i < tictactoeCell.length; i++) {
+    tictactoeCell[i].onclick = tictactoe;
+}
+
+let tictactoeBoxFlag = false;
+document.getElementById("game").onclick = () => {
+
+    for(let i = 0; i < tictactoeCell.length; i++) {
+        tictactoeCell[i].classList.remove("cross-img");
+        tictactoeCell[i].classList.remove("circle-img");
+
+    }
+    tictactoeFlag = false;
+    tictactoeBox = [];
+
+
+    if (!tictactoeBoxFlag) {
+        document.getElementsByClassName("tictactoe-box")[0].style.zIndex = "1";
+        tictactoeBoxFlag = true;
+    }else{
+        document.getElementsByClassName("tictactoe-box")[0].style.zIndex = "-1";
+        tictactoeBoxFlag = false;
+    }
+};
