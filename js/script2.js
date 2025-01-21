@@ -1,21 +1,33 @@
 // 로그인 버튼 클릭 시 로그인, 로그아웃 토글
-let loginFlag = false;
-
-const loginCheck = () => {
-    if(loginFlag) {
-        document.getElementById("btLogin").innerText = "로그인";
-        document.getElementById("btLoginLeft").innerText = "zod에 로그인";
-        loginFlag = false;
+let loginFormFlag = false;
+const loginForm = () => {
+    if(!loginFormFlag){
+        if(loginCheckFlag){
+            document.getElementById("btLogin").innerText = "로그인";
+            document.getElementById("btLoginLeft").innerText = "zod에 로그인";
+            loginCheckFlag = false;
+        }else{
+            document.getElementsByClassName("login-form")[0].style.display = "block";
+            loginFormFlag = true;
+        }
     }else{
-        document.getElementById("btLogin").innerText = "로그아웃";
-        document.getElementById("btLoginLeft").innerText = "로그아웃";
-        loginFlag = true;
+        document.getElementsByClassName("login-form")[0].style.display = "none";
+        loginFormFlag = false;
     }
+}
+let loginCheckFlag = false;
+const loginCheck = () => {
+    document.getElementById("btLogin").innerText = "로그아웃";
+    document.getElementById("btLoginLeft").innerText = "로그아웃";
+    loginCheckFlag = true;
+    loginForm();
 
 }
 
-document.getElementById("btLogin").onclick = loginCheck;
-document.getElementById("btLoginLeft").onclick = loginCheck;
+document.getElementById("btLogin").onclick = loginForm;
+document.getElementById("btLoginLeft").onclick = loginForm;
+document.getElementById("btLogin-form").onclick = loginCheck;
+
 
 // 다크모드 버튼 클릭 시 다크, 화이트 토글
 let darkModeFlag = false;
