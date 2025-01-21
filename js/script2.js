@@ -17,6 +17,7 @@ const loginCheck = () => {
 document.getElementById("btLogin").onclick = loginCheck;
 document.getElementById("btLoginLeft").onclick = loginCheck;
 
+// 다크모드 버튼 클릭 시 다크, 화이트 토글
 let darkModeFlag = false;
 
 const darkMode = () => {
@@ -76,3 +77,18 @@ const darkMode = () => {
 
 
 document.getElementById("darkMode").onclick = darkMode;
+
+// 검색창 버튼 클릭 시 input창 토글
+let searchFlag = false;
+
+const search = () => {
+    if(searchFlag) {
+        document.getElementById("header-input").style.opacity = 0;
+        searchFlag = false;
+    }else{
+        document.getElementById("header-input").style.opacity = 1;
+        searchFlag = true;
+    }
+}
+
+document.getElementById("search").onclick = search;
