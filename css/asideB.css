@@ -4,9 +4,9 @@
 }
 
 .notice-box {
-    margin-left: 10px;
+    margin: 10px;
     border-radius: 3px;
-    text-align: left;
+   
 }
 
 .notice-title {
@@ -30,8 +30,10 @@ text-align: left;
    
 .aside-b-img {
     margin-top: 30px;  
-    height: 100px;
+    height: 200px;
+    width: 100%;
     border-radius: 10px;
+    
 
 }
 
