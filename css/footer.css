@@ -1,0 +1,22 @@
+.footer{
+    grid-area: footer;
+    background-color: darkseagreen;
+    font-size: smaller;
+}
+
+.footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color:aquamarine
+}
+
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.75rem 0;
+    list-style: none;
+}
+
+.footer li {
+    margin: 0 0.5rem; 
+}
