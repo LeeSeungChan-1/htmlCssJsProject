@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/darkMode.css">
     <link rel="stylesheet" href="css/loginForm.css">
+    <link rel="stylesheet" href="css/tictactoe.css">
 
 </head>
 <body>
@@ -259,7 +260,7 @@
                 <a href="#" class="aside-a-item-a"><div>출석체크</div></a>
                 <a href="#" class="aside-a-item-a"><div>스티커</div></a>
                 <a href="#" class="aside-a-item-a"><div>퀘스트</div></a>
-                <div></div>
+                <a href="#" id="game"><i class="fi fi-br-console-controller"></i></a>
             </div>
             <img class="aside-a-img" src="img/adLeft1.png" alt="">
             <img class="aside-a-img" src="img/adLeft2.png" alt="">
@@ -302,13 +303,26 @@
           
     </div>
 
-        <form action="#"  class="login-form">
-            <label for="id">아이디</label>
-            <input type="text" id="id">
-            <label for="password">비밀번호</label>
-            <input type="password" id="password">
-            <button id="btLogin-form">로그인</button>
-        </form>
+<!-- 로그인 폼 -->
+    <form action="#"  class="login-form">
+        <label for="id">아이디</label>
+        <input type="text" id="id">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password">
+        <button id="btLogin-form">로그인</button>
+    </form>
+
+    <div class="tictactoe-box">
+        <div class="tictactoe-cell" id="0"></div>
+        <div class="tictactoe-cell" id="1"></div>
+        <div class="tictactoe-cell" id="2"></div>
+        <div class="tictactoe-cell" id="3"></div>
+        <div class="tictactoe-cell" id="4"></div>
+        <div class="tictactoe-cell" id="5"></div>
+        <div class="tictactoe-cell" id="6"></div>
+        <div class="tictactoe-cell" id="7"></div>
+        <div class="tictactoe-cell" id="8"></div>
+    </div>
 
     <script src="./js/script.js"></script>
     <script src="./js/script2.js"></script>
