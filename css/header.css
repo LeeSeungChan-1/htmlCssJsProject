@@ -14,12 +14,16 @@
     text-decoration: none;
     padding: 0.5em;
 }
+.header-a:nth-child(1){
+    flex: 1 0 auto;
+}
+
 .header input{
-    margin-left: auto;
     padding: 0.5em;
     border-radius: 30px;
     border: 1px solid #ddd;
     opacity: 0;
+    margin-left: auto;
 }
 .header img{
     height: 28px;
@@ -38,7 +42,7 @@
     .header a:nth-child(1){
         flex: 0 0 auto;
     }
-    .header a:nth-child(-n+10){
+    .header a:nth-child(n+2):nth-child(-n+10){
         display: none;
     }
 }
