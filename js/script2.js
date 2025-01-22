@@ -16,7 +16,15 @@ const loginForm = () => {
     }
 }
 let loginCheckFlag = false;
+const id = '1234';
+const password = '1234';
 const loginCheck = () => {
+    let inputId = this.id.value;
+    let inputPassword = this.password.value;
+    if(inputId !== id || inputPassword !== password) {
+        alert('로그인 실패');
+        return 0;
+    }
     document.getElementById("btLogin").innerText = "로그아웃";
     document.getElementById("btLoginLeft").innerText = "로그아웃";
     loginCheckFlag = true;
