@@ -37,6 +37,15 @@ text-align: left;
 
 }
 
+.aside-b-img {
+    transition: transform 0.3s ease; 
+  }
+  
+ 
+  .aside-b-img:hover {
+    transform: scale(1.1); 
+  }
+  
 @media(max-width: 1400px){
     .aside-b{
         display: none;
