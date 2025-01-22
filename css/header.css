@@ -45,12 +45,23 @@
     background-color: dodgerblue;
     color: white;
     border-radius: 30px;
+    display: block;
+}
+.header-menu-burger{
+    display: none;
+
 }
 @media(max-width: 1100px){
     .header{
         height: 72px;
     }
     .header a:nth-child(n+2):nth-child(-n+10){
+        display: none;
+    }
+    .header-menu-burger{
+        display: block;
+    }
+    .header button{
         display: none;
     }
 }

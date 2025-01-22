@@ -46,6 +46,8 @@ const darkMode = () => {
         document.querySelector(".page").classList.remove("dark1");
         document.querySelector(".aside-a-item").classList.remove("dark2");
         document.querySelector("body").classList.remove("dark1");
+        document.querySelector(".nav-list").classList.remove("dark1");
+
 
 
         let headerA = document.querySelectorAll(".header-a");
@@ -81,6 +83,10 @@ const darkMode = () => {
         for (let i = 0; i < asideB.length; i++) {
             asideB[i].classList.remove("dark2");
         }
+        let navList = document.querySelectorAll(".nav-list a");
+        for (let i = 0; i < navList.length; i++) {
+            navList[i].classList.remove("dark2");
+        }
 
         darkModeFlag = false;
     }else{
@@ -88,7 +94,7 @@ const darkMode = () => {
         document.querySelector(".page").classList.add("dark1");
         document.querySelector(".aside-a-item").classList.add("dark2");
         document.querySelector("body").classList.add("dark1");
-
+        document.querySelector(".nav-list").classList.add("dark1");
 
         let headerA = document.querySelectorAll(".header-a");
         for(let i = 0; i < headerA.length; i++) {
@@ -122,6 +128,11 @@ const darkMode = () => {
         let asideB = document.querySelectorAll(".notice-title, .notice-item a");
         for (let i = 0; i < asideB.length; i++) {
             asideB[i].classList.add("dark2");
+        }
+
+        let navList = document.querySelectorAll(".nav-list a");
+        for (let i = 0; i < navList.length; i++) {
+            navList[i].classList.add("dark2");
         }
 
         darkModeFlag = true;
@@ -224,3 +235,26 @@ document.getElementById("game").onclick = () => {
         tictactoeBoxFlag = false;
     }
 };
+
+
+// 네브바 토글
+document.getElementsByClassName("nav-list")[0].style.display = "none";
+
+let navFlag = false;
+document.getElementsByClassName("header-menu-burger")[0].onclick = () => {
+    if(navFlag) {
+        document.getElementsByClassName("nav-list")[0].style.display = "none";
+        navFlag = false;
+    }else{
+        document.getElementsByClassName("nav-list")[0].style.display = "block";
+        navFlag = true;
+    }
+}
+
+window.onresize = function(event){
+    let innerWidth = window.innerWidth;
+    if(innerWidth > 1100) {
+        document.getElementsByClassName("nav-list")[0].style.display = "none";
+        navFlag = false;
+    }
+}
