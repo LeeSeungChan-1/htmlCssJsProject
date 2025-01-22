@@ -14,7 +14,7 @@
     padding: 1em;
 }
 .header-a:nth-child(1){
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 .header input{

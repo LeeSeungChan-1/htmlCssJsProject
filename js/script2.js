@@ -37,6 +37,8 @@ const darkMode = () => {
         document.querySelector(".header").classList.remove("dark2");
         document.querySelector(".page").classList.remove("dark1");
         document.querySelector(".aside-a-item").classList.remove("dark2");
+        document.querySelector("body").classList.remove("dark1");
+
 
         let headerA = document.querySelectorAll(".header-a");
         for(let i = 0; i < headerA.length; i++) {
@@ -77,6 +79,8 @@ const darkMode = () => {
         document.querySelector(".header").classList.add("dark2");
         document.querySelector(".page").classList.add("dark1");
         document.querySelector(".aside-a-item").classList.add("dark2");
+        document.querySelector("body").classList.add("dark1");
+
 
         let headerA = document.querySelectorAll(".header-a");
         for(let i = 0; i < headerA.length; i++) {
