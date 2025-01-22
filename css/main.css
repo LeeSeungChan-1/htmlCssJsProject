@@ -65,14 +65,14 @@
     padding: 0.5em;
     border-top: 1px solid gray;
 }
-.main-content-item-text{
+.item-text{
     font-size: 15px;
 
 }
-.main-content-item-text span{
+.item-text span{
     color: blue;
 }
-.main-content-item-date{
+.item-date{
     font-size: 12px;
 }
 .img-content{
@@ -85,14 +85,6 @@
     width: 100px;
     height: 75px;
     flex: 0 0 auto;
-}
-.item-text{
-    font-size: 15px;
-
-}
-.item-date{
-    font-size: 12px;
-
 }
 a{
     text-decoration: none;
