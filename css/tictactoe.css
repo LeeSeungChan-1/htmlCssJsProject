@@ -24,8 +24,8 @@
     border: 1px solid black;
 }
 .cross-img{
-    background-image: url("/img/cross.png");
+    background-image: url("../img/cross.png");
 }
 .circle-img{
-    background-image: url("/img/circle.png");
+    background-image: url("../img/circle.png");
 }
